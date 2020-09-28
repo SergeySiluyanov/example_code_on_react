@@ -1,0 +1,33 @@
+@import "~Assets/scss/_wc-vars";
+
+.month {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: flex-start;
+    width: 100%;
+    min-height: $step * 35;
+    padding: 0 $step;
+
+    &__label {
+        display: flex;
+        position: relative;
+        align-items: center;
+        justify-content: center;
+        width: 32px;
+        min-width: 32px;
+        height: 32px;
+        min-height: 32px;
+        margin: 0 8px 8px;
+        border-radius: 32px;
+        color: rgba($wc-text-black, .38);
+        cursor: pointer;
+    }
+
+    &__label-list {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 100%;
+    }
+}

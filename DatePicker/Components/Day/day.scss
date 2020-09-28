@@ -1,0 +1,38 @@
+@import "~Assets/scss/_wc-vars";
+
+.day {
+    @extend %caption;
+
+    display: flex;
+    position: relative;
+    align-items: center;
+    justify-content: center;
+    width: $step * 4;
+    min-width: $step * 4;
+    height: $step * 4;
+    min-height: $step * 4;
+    margin: 0 $step $step;
+    transition: all .3s ease;
+    border-radius: $step * 4;
+    color: $wc-text-black;
+    cursor: pointer;
+
+    &:hover {
+        background: rgba($wc-bg-primary, .8);
+        color: $wc-text-white;
+    }
+
+    &--not-current {
+        color: rgba($wc-text-black, .38);
+    }
+
+    &--disabled {
+        color: rgba($wc-text-black, .38);
+        cursor: default;
+    }
+
+    &--active {
+        background: $wc-bg-primary;
+        color: $wc-text-white;
+    }
+}

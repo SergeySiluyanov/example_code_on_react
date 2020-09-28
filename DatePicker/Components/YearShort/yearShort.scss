@@ -1,0 +1,31 @@
+@import "~Assets/scss/_wc-vars";
+
+.year-short {
+    @extend %caption;
+
+    display: flex;
+    position: relative;
+    align-items: center;
+    justify-content: center;
+    width: $step * 7;
+    min-width: $step * 7;
+    margin: 0 $step * 3 $step;
+    padding: $step 0;
+    transition: all .3s ease;
+    color: $wc-text-black;
+    cursor: pointer;
+
+    &:hover {
+        background: rgba($wc-bg-primary, .8);
+        color: $wc-text-white;
+    }
+
+    &--disabled {
+        color: rgba($wc-text-black, .38);
+    }
+
+    &--active {
+        background: $wc-bg-primary;
+        color: $wc-text-white;
+    }
+}

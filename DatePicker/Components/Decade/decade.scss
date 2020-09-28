@@ -1,0 +1,11 @@
+@import "~Assets/scss/_wc-vars";
+
+.decade {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: $step * 30;
+    min-height: $step * 30;
+}

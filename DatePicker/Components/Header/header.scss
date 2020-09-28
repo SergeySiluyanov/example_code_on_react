@@ -1,0 +1,24 @@
+@import "~Assets/scss/_wc-vars";
+
+.date-picker-header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    &__btn {
+        flex: 0 0 40px;
+    }
+
+    &__text {
+        flex: 1 1 100%;
+        padding: $step 0;
+        transition: all .3s ease;
+        border-radius: $step / 2;
+        text-align: center;
+        cursor: pointer;
+
+        &:hover {
+            background: $wc-bg-middlegray;
+        }
+    }
+}
